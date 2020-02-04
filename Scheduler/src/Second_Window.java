@@ -9,6 +9,8 @@ import javax.swing.JPanel;
 import javax.swing.JMenuBar;
 import java.awt.List;
 import java.awt.Button;
+import java.awt.Color;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTable;
@@ -16,6 +18,8 @@ import javax.swing.JScrollPane;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.UIManager;
+import javax.swing.plaf.ColorUIResource;
 import javax.swing.table.DefaultTableModel;
 
 public class Second_Window extends Gui_Manger{
@@ -59,6 +63,8 @@ public class Second_Window extends Gui_Manger{
 		JScrollPane scrollPane = new JScrollPane();
 		
 		table = new JTable();
+		table.setGridColor(Color.black);
+
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
 				{null, null, null, null, null, null, null, null, null, null},
